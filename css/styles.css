@@ -1,40 +1,44 @@
-body {
-  font-family: Arial, sans-serif;
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
+/* Header styles */
 header {
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  padding: 20px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 1rem;
-}
-
-nav a {
+.logo a {
   color: #fff;
+  font-size: 24px;
   text-decoration: none;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem;
+.menu {
+  list-style: none;
+  margin-top: 10px;
 }
 
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.menu li a:hover {
+  background-color: #555;
+  border-radius: 3px;
+}
+
+/* Blog section styles */
 .blog {
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -45,19 +49,31 @@ main {
 }
 
 .blog h2 {
-  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .blog p {
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .blog a {
+  color: #333;
+  text-decoration: none;
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.blog a:hover {
+  background-color: #bbb;
+}
+
+/* Footer styles */
+footer {
   background-color: #333;
   color: #fff;
-  display: block;
-  padding: 0.5rem;
   text-align: center;
-  text-decoration: none;
-  width: 100px;
+  padding: 20px;
 }
