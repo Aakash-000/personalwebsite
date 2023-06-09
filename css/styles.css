@@ -8,6 +8,9 @@ body {
 header {
   font-size: 20px;
 }
+.navbar{
+  background-color: #8ECAE6;
+}
 
 .navbar-brand {
   font-size: 24px;
