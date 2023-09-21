@@ -191,7 +191,12 @@
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-
+.contact-us .form{
+  background-color: #ff004f; 
+  display: grid; 
+  place-items: center; 
+  padding: 2rem;
+}
 form .form-section{
   display: flex;
   flex-direction: row;
@@ -276,7 +281,7 @@ form .form-section .form-section-sub{
 
 /*  Mobile Responsive */
 
-@media screen and (max-width : 650px) {
+@media screen and (max-width : 500px) {
 
   .navbar{
     z-index: 99;
@@ -292,14 +297,25 @@ form .form-section .form-section-sub{
   }
 
   .wrapper .hero-section{
-    padding: 5rem 0rem 0rem 2rem;
+    padding: 10rem 0rem 0rem 0.5rem;
     backdrop-filter: blur(0.5px);
     margin-top: 2rem;
     margin-bottom: 12rem;
     z-index: -9;
   }
-  
 
+  .wrapper .hero-section .hero-section-container .hero-section-legend{
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+  .wrapper .hero-section .hero-section-container .hero-section-h1{
+    font-size: 2.7rem;
+    font-weight: bolder;
+  } 
+  .wrapper .hero-section .hero-section-container .hero-section-span{
+    font-size: 2.1rem;
+    font-weight: bolder;
+  }
   .wrapper-about-me .wrapper-div-about-me{
     display: flex;
     flex-direction: column;
@@ -314,12 +330,12 @@ form .form-section .form-section-sub{
     flex-direction: column;
     gap:2rem;
     padding-left: 2rem;
+    width: 340px;
  }
  .wrapper-div-about-me .about-me-left .about-me-image{
-  /* width: 100%;
-  height: 100%; */
-  object-fit: contain;
-  padding-left: 4rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
   }
 
@@ -331,7 +347,6 @@ form .form-section .form-section-sub{
   }
   .about-me-right .about-me-right-p{
     text-align: justify;
-  
     font-size: 1rem;
     font-weight: 500;
     color: #DAD7CD;
@@ -343,7 +358,7 @@ form .form-section .form-section-sub{
   }
   .about-me-tab-panel .about-me-tab-panel-nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap:2rem;
   }
@@ -391,6 +406,9 @@ form .form-section .form-section-sub{
   }
   
 
+.contact-us .form{
+    padding: 0px;
+  }
 
   form .form-section{
     display: flex;
@@ -496,10 +514,6 @@ form .form-section .form-section-sub{
     opacity: 1;
   }
 
-  .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
-  }
-
   .active.fade-left {
     animation: fade-left 1.5s ease-out;
   }
@@ -508,19 +522,6 @@ form .form-section .form-section-sub{
     animation: fade-right 1.5s ease-out;
   }
 
-  @keyframes fade-bottom {
-
-    0% {
-      transform: translateY(60px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-
-  }
   @keyframes fade-left {
     0% {
       transform: translateX(-100px);
