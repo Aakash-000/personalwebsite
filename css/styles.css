@@ -277,9 +277,11 @@ form .form-section .form-section-sub{
 /*  Mobile Responsive */
 
 @media screen and (max-width : 650px) {
+
   .navbar{
     z-index: 99;
   }
+
   .navbar .navigation-nav{
     display: flex;
     flex-direction: row;
@@ -288,6 +290,7 @@ form .form-section .form-section-sub{
     padding: 1rem 2rem 1rem 2rem;
     backdrop-filter: blur(0.4px);
   }
+
   .wrapper .hero-section{
     padding: 5rem 0rem 0rem 2rem;
     backdrop-filter: blur(0.5px);
@@ -295,6 +298,8 @@ form .form-section .form-section-sub{
     margin-bottom: 12rem;
     z-index: -9;
   }
+  
+
   .wrapper-about-me .wrapper-div-about-me{
     display: flex;
     flex-direction: column;
@@ -365,10 +370,7 @@ form .form-section .form-section-sub{
     gap:2rem;
     margin-bottom: 4rem;
   }
-  /* .wrapper .services-section h1{
-    text-align: center;
-    margin-left: 0px;
-  } */
+  
   .wrapper .services-section .services-col{
     display: grid;
     grid-template-columns: auto;
@@ -376,6 +378,7 @@ form .form-section .form-section-sub{
     gap:2rem;
     margin: 0px;
   }
+
   .services-col .services-col-sub{
     display: flex;
     height:300px;
@@ -446,7 +449,8 @@ form .form-section .form-section-sub{
     outline: none;
     background: #fff;
     font-size: 0.8rem;
-    width: 230px;
+    display: inline-block;
+    width: 175px;
   }
   
   .form-section-sub-message textarea{
@@ -491,24 +495,31 @@ form .form-section .form-section-sub{
   .reveal.active {
     opacity: 1;
   }
+
   .active.fade-bottom {
     animation: fade-bottom 1s ease-in;
   }
+
   .active.fade-left {
     animation: fade-left 1.5s ease-out;
   }
+
   .active.fade-right {
     animation: fade-right 1.5s ease-out;
   }
+
   @keyframes fade-bottom {
+
     0% {
       transform: translateY(60px);
       opacity: 0;
     }
+
     100% {
       transform: translateY(0);
       opacity: 1;
     }
+
   }
   @keyframes fade-left {
     0% {
