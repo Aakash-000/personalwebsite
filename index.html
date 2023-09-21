@@ -1,51 +1,178 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-U-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technology Blog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7496074783650926"
-  crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Portfolio</title>
+  <script src="js/scripts.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand" href="index.html">TechBlog</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Latest</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"><i class="fa fa-info-circle"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html"><i class="fa fa-pencil-square-o"></i> Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
-          </li>
-        </ul>
+    <div class="wrapper">
+    <div class="navbar">
+      <nav class="navigation-nav">
+      <h1 class="navigation-nav-h1">
+      <span class="navigation-nav-span">A</span>
+      D</h1>
+      <ul class="navigation-nav-ul">
+        <a href="">
+          <i class='bx bxl-twitter' style="font-size: 1.8rem;color: #0F4C5C">
+          </i>
+        </a>
+        <a href="">
+          <i class='bx bxl-linkedin' style="font-size: 1.8rem;color: #0F4C5C">
+          </i>
+        </a>
+        <a href="">
+          <i class='bx bxl-facebook' style="font-size: 1.8rem;color: #0F4C5C;"></i>
+        </a>
+        <a href="">
+          <i class='bx bxl-instagram' style="font-size: 1.8rem;color: #0F4C5C">
+          
+          </i>
+        </a>
+      </ul> 
+      </nav>
+    </div> 
+    <section class="hero-section reveal fade-bottom">
+      <div class="hero-section-container">
+      <legend class="hero-section-legend">Fullstack Developer</legend>
+      <h1 class="hero-section-h1">Hi, I'm Aakash</h1>
+      <span class="hero-section-span">Dhakal from Nepal</span>
       </div>
-    </nav>
-  </header>
+    </section>
+    <section class="wrapper-about-me reveal fade-left">
+      <div class="wrapper-div-about-me">
+      <div class="about-me-left">
+        <img src="./assets/about-me-img.jpg" alt="Profile" class="about-me-image"/>
+      </div>
+      <div class="about-me-right">
+        <h1 class="about-me-right-h1">About Me</h1>
+        <p class="about-me-right-p">
+        I have beginner level skills in both front-end and back-end technologies, allowing me to create seamless, end-to-end solutions that delight users. From responsive and engaging user interfaces using HTML, CSS, and JavaScript to powerful server-side logic with languages like Python, Node.js, or Java, I'm well-versed in the tools needed to make it happen.
+        </p>
+        <div class="about-me-tab-panel">
+          <nav class="about-me-tab-panel-nav">
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tablinks" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
+            <button class="tablinks" onclick="openTab(event, 'certifications')">Certifications</button>
+          </nav>
+          <div id="skills" class="tabcontent">
+            <div class="tabcontent-content">
+            <h2>Frontend Development</h2>
+            <span>Building Scalable Applications using HTML,CSS,Javascript and library such as Tailwind,Reactjs,Typescript</span>
+            </div>
+            <div class="tabcontent-content">
+            <h2>Backend Development</h2>
+            <span>Building Scalable Applications using Nodejs, Java and libraries such as Springboot,Express</span>
+            </div>
+            <div class="tabcontent-content">
+            <h2>SQL Optimization</h2>
+            <span>Building Relational Database using MYSQL,SQLite</span>
+            </div>
+          </div>
+          <div id="experience" class="tabcontent">
+            <h2>Frontend Skills Development</h2>
+            <span>Building Scalable Applications using HTML,CSS,Javascript</span>
+          </div>
+          <div id="education" class="tabcontent">
+            <h2>Frontend Education Development</h2>
+            <span>Building Scalable Applications using HTML,CSS,Javascript</span>
+          </div>
+          <div id="certifications" class="tabcontent">
+            <h2>Frontend Certifications Development</h2>
+            <span>Building Scalable Applications using HTML,CSS,Javascript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>  
+    <section class="services-section reveal fade-right" style="margin:5rem 0rem 5rem 0rem; z-index:-9">
+    <h1 style="font-size: 2.5rem; font-weight: 900; margin-left: 3.5rem">My Services</h1>
+    <div class="services-col">
+    <div class="services-col-sub">
+    <p style="font-size: 3rem;">
+    <i class='bx bx-code-alt'></i>
+    </p>
+    <h3 style="font-size: 1.5rem; font-weight: 700;">Web Development</h3>
+    <h5 style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quae ratione molestias eligendi cum! In error perspiciatis itaque mollitia quos placeat ut, nesciunt excepturi aperiam quasi, id, maiores architecto consectetur.</h5>
+    </div>
+    <div class="services-col-sub">
+    <p style="font-size: 3rem;">
+    <i class='bx bx-code-alt'></i>
+    </p>
+    <h3 style="font-size: 1.5rem; font-weight: 700;">Backend Technology</h3>
+    <h5 style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quae ratione molestias eligendi cum! In error perspiciatis itaque mollitia quos placeat ut, nesciunt excepturi aperiam quasi, id, maiores architecto consectetur.</h5>
+    </div>
+    <div class="services-col-sub">
+    <p style="font-size: 3rem;">
+    <i class='bx bx-code-alt'></i>
+    </p>
+    <h3 style="font-size: 1.5rem; font-weight: 700;">Fullstack Project</h3>
+    <h5 style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quae ratione molestias eligendi cum! In error perspiciatis itaque mollitia quos placeat ut, nesciunt excepturi aperiam quasi, id, maiores architecto consectetur.</h5>
+    </div>
+    <div class="services-col-sub">
+    <p style="font-size: 3rem;">
+    <i class='bx bx-code-alt'></i>
+    </p>
+    <h3 style="font-size: 1.5rem; font-weight: 700;">Web Deployment</h3>
+    <h5 style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quae ratione molestias eligendi cum! In error perspiciatis itaque mollitia quos placeat ut, nesciunt excepturi aperiam quasi, id, maiores architecto consectetur.</h5>
+    </div>
+    </div>
+    </section>
+    <section class="contact-us reveal fade-bottom" style="margin-top: 3rem;" >
+      <form method ="post" action="/action_page.php" style="background-color: #ff004f; display: grid; place-items: center; padding: 2rem;">
+          <fieldset style="border: 2px solid #F8F9FA; padding: 2rem;">
+          <legend style="color:#F8F9FA; font-weight: 900; font-size: 1.5rem; margin-left: 2rem; padding: 1rem;">Contact Me</legend>
+          <div class="form-section">
+          <div class="form-section-sub">
+          <label for="uname">Username</label>
+          <input type="text" id="uname" required name="firstname" placeholder="Your Full Name..">
+          </div>
+          <div class="form-section-sub">
+          <label for="email">Email</label>
+          <input type="email" id="email" required name="email" placeholder="Your Email...">
+          </div>
+          </div>
+          <div class="form-section-sub">
+          <label for="country">Country</label>
+          <select required id="country" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+          </select>
+          </div>
+          <div class="form-section-sub-message">
+          <label for="message">Message</label>
+          <textarea required id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
+          </div>
+          <button class="contact-button" name="submitbutton" type="submit" value="Submit">Submit</button>
+        </fieldset>
+        </form>
+    </section>
+    <section class="page-footer" style="padding: 2rem 0rem 2rem 0rem; backdrop-filter: blur(20px); color:#DAD7CD; text-align: center;">
+      <span>@Aakash Dhakal <br/> For Contact and Inquiries : aakashdhakal2430@gmail.com</span>
+    </section>
+    </div>
 
-  <!-- Rest of your webpage content goes here -->
-  
-  <footer>
-    <!-- Footer content goes here -->
-  </footer>
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+      </script>
 
 </body>
 </html>
