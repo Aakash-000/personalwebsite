@@ -157,14 +157,71 @@
   display: none; 
   color: #E9EDC9;
 }
+.tabcontent .tabcontent-experience{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.tabcontent .tabcontent-education{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:0.5rem;
+  margin: 0rem 0rem 1rem 1rem;
+}
 
 .tabcontent .tabcontent-content{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap:0.5rem;
   margin: 0.5rem;
 }
+.tabcontent .tabcontent-content .skills-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0.5rem;
+}
 
+.tabcontent .tabcontent-content .skills-div span{
+  font-size: 1rem;
+}
+
+.tabcontent .tabcontent-content .skills-div .skills-icon{
+  font-size: 4rem;
+}
+
+.tabcontent .tabcontent-certifications{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabcontent .tabcontent-certifications ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:0.5rem;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.tabcontent .tabcontent-certifications ul li{
+  margin-left: 1rem;
+}
+
+.tabcontent .tabcontent-certifications .tabcontent-certificates{
+  display: flex;
+  flex-direction: row;
+  gap:0.5rem;
+}
+
+.tabcontent .tabcontent-certifications .tabcontent-certificates a{
+  color: #000;
+  text-decoration: underline;
+}
 
  /* Next Section */
 
@@ -191,6 +248,16 @@
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+
+.services-col .services-col-sub p{
+  font-size: 3rem;
+}
+
+.services-col .services-col-sub h3{
+  font-size: 1.5rem; 
+  font-weight: 700;
+}
+
 .contact-us .form{
   background-color: #ff004f; 
   display: grid; 
@@ -329,8 +396,6 @@ form .form-section .form-section-sub{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    padding-left: 2rem;
-    width: 340px;
  }
  .wrapper-div-about-me .about-me-left .about-me-image{
   width: 100%;
@@ -344,13 +409,16 @@ form .form-section .form-section-sub{
     font-size: 2rem;
     font-weight: bolder;
     color: #DAD7CD;
-  }
-  .about-me-right .about-me-right-p{
     text-align: justify;
+  }
+
+  .about-me-right .about-me-right-p{
     font-size: 1rem;
     font-weight: 500;
     color: #DAD7CD;
+    text-align: justify;
   }
+
   .about-me-tab-panel{
     display: flex;
     flex-direction: column;
@@ -392,6 +460,15 @@ form .form-section .form-section-sub{
     padding: 1rem;
     gap:2rem;
     margin: 0px;
+  }
+
+  .services-col .services-col-sub p{
+    font-size: 2rem;
+  }
+
+  .services-col .services-col-sub h3{
+    font-size: 1.2rem; 
+    font-weight: 700;
   }
 
   .services-col .services-col-sub{
@@ -494,6 +571,14 @@ form .form-section .form-section-sub{
     gap:0.5rem;
     margin: 0.5rem;
   }
+
+  .tabcontent .tabcontent-content .skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+  }
+
   .tabcontent .tabcontent-content h2{
   font-size: 1.3rem;
   font-weight: 800;
@@ -547,7 +632,7 @@ form .form-section .form-section-sub{
 
 /*For Size Between 550,600 */
 
-@media screen and (min-width : 500px ) and (max-width:800px) {
+@media screen and (max-width : 799px ) and (min-width:501px) {
 
   .navbar{
     z-index: 99;
@@ -595,8 +680,6 @@ form .form-section .form-section-sub{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    padding-left: 2rem;
-    width: 340px;
  }
  .wrapper-div-about-me .about-me-left .about-me-image{
   width: 100%;
@@ -671,6 +754,14 @@ form .form-section .form-section-sub{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   }
   
+  .services-col .services-col-sub p{
+    font-size: 2.3rem;
+  }
+
+  .services-col .services-col-sub h3{
+    font-size: 1.4rem; 
+    font-weight: 700;
+  }
 
 .contact-us .form{
     padding: 0px;
@@ -691,36 +782,43 @@ form .form-section .form-section-sub{
     align-items: center;
     gap:0.5rem;
   }
+
   .form-section-sub{
     margin: 0rem 0rem 1.5rem 0rem;
   }
+
   .form-section-sub-message{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap:0.5rem;
   }
+
   .form-section-sub-message{
     margin: 0rem 0rem 2rem 0rem;
   }
+
   .form-section-sub-message label{
     font-size: 0.8rem;
     display: inline-block;
     color: #F8F9FA;
     width:100px;
   }
+
   .form-section .form-section-sub label{
     font-size: 0.8rem;
     display: inline-block;
     color: #F8F9FA;
     width: 100px;
   }
+
   .form-section-sub label{
     font-size: 0.8rem;
     display: inline-block;
     width: 100px;
     color: #F8F9FA;
   }
+
   .form-section .form-section-sub input{
     padding: 0.5rem;
     outline: none;
@@ -736,6 +834,7 @@ form .form-section .form-section-sub{
     display: inline-block;
     width: 175px;
   }
+  
   
   .form-section-sub-message textarea{
     width: 100%;
@@ -760,6 +859,14 @@ form .form-section .form-section-sub{
     gap:0.5rem;
     margin: 0.5rem;
   }
+
+  .tabcontent .tabcontent-content .skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+  }
+
   .tabcontent .tabcontent-content h2{
   font-size: 1.3rem;
   font-weight: 800;
